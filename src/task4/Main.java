@@ -2,7 +2,7 @@ package task4;
 
 public class Main {
     public static void main(String[] args) {
-        MyExecutorService executorService = new MyExecutorService(4);
+        MyExecutorService executorService = new MyExecutorService(2);
         executorService.execute(() -> {
             try {
                 Thread.sleep(10);
@@ -14,7 +14,7 @@ public class Main {
 
         executorService.execute(() -> {
             try {
-                Thread.sleep(9);
+                Thread.sleep(11);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
